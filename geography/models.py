@@ -47,4 +47,3 @@ class City(models.Model):
             return f"{self.name} ({self.special_note})"
         else:
             return self.name
-
