@@ -7,7 +7,7 @@ class Country(models.Model):
     name = models.CharField(max_length=255)
     population = models.PositiveIntegerField()
     land_area = models.PositiveIntegerField()
-    flag = models.ImageField(null=True)
+    flag = models.ImageField(null=True, upload_to='flags/')
 
     @property
     def is_transcontinental(self):

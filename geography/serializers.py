@@ -11,7 +11,7 @@ class CountrySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Country
-        exclude = ('flag',)
+        fields = "__all__"
 
 
 class ContinentSerializer(serializers.ModelSerializer):

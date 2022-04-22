@@ -9,5 +9,5 @@ router.register(r'continents', ContinentViewSet, basename='continents')
 router.register(r'cities', CityViewSet, basename='cities')
 
 urlpatterns = [
-    path('', include(router.urls))
+    path('', include(router.urls)),
 ]
